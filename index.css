@@ -12,30 +12,30 @@ body {
   background-color: hsl(270, 20%, 96%);
   overflow-x: hidden;
 }
-.attribution {
+/* .attribution {
   font-size: 11px;
   text-align: center;
   margin-top: 20px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
 .parent {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   position: relative;
 }
 .round-box {
-  height: 90vh;
-  width: 30vw;
-  border-radius: 0 0 30vh 30vh;
+  height: 100%;
+  width: 240%;
+  border-radius: 0 0 100% 100%;
   background: rgb(136, 56, 255);
   background: linear-gradient(
     217deg,
     rgba(233, 66, 255, 0.9) 10%,
     rgba(136, 56, 255, 1) 40%
   );
-  margin-left: -7vh;
+  margin-left: -60%;
 }
 .container {
   display: flex;
@@ -46,8 +46,8 @@ body {
 }
 .round-box2 {
   height: 85vh;
-  width: 30vw;
-  border-radius: 30vh 30vh 0 0;
+  width: 40vw;
+  border-radius: 30vw 30vw 0 0;
   background-color: rgba(237, 228, 245, 0.7);
   position: absolute;
   top: 15vh;
@@ -65,6 +65,9 @@ body {
   color: hsl(270, 7%, 64%);
 }
 /* the phone side */
+.phones-parent{
+  margin-left: 9%;
+}
 .phone {
   font-size: 0.7rem;
   border: 10px solid white;
@@ -80,7 +83,7 @@ body {
   box-shadow: -2px 2px 74px 12px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: -2px 2px 74px 12px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: -2px 2px 74px 12px rgba(0, 0, 0, 0.3);
-  margin-left: -9vh;
+  
   justify-content: space-around;
 }
 .name {
