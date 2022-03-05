@@ -8,9 +8,9 @@ body {
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Rubik", sans-serif;
-  width: 1440px;
+  max-width: 1440px;
   background-color: hsl(270, 20%, 96%);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .attribution {
   font-size: 11px;
@@ -45,7 +45,7 @@ body {
   gap: 13vh;
 }
 .round-box2 {
-  height: 100vh;
+  height: 85vh;
   width: 30vw;
   border-radius: 30vh 30vh 0 0;
   background-color: rgba(237, 228, 245, 0.7);
@@ -72,8 +72,8 @@ body {
   border-radius: 40px;
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(12, 21px);
   grid-template-rows: repeat(10, 45px);
+  grid-template-columns: repeat(12, 21px);
   row-gap: 10px;
   column-gap: 3px;
   position: relative;
@@ -81,6 +81,7 @@ body {
   -webkit-box-shadow: -2px 2px 74px 12px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: -2px 2px 74px 12px rgba(0, 0, 0, 0.3);
   margin-left: -9vh;
+  justify-content: space-around;
 }
 .name {
   grid-column: 1 / 13;
@@ -295,3 +296,24 @@ input[type="radio"] {
   right: 15px;
   font-weight: bold;
 }
+@media screen and (max-width: 600px){
+   body{
+     
+     overflow-x: hidden;
+   }
+   .container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+   .phone{
+     margin-left: -3vh;
+   }
+   .right{
+     text-align: center;
+   }
+   .round-box2 {
+    top: 320px;
+  }
+  }
